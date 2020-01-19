@@ -14,10 +14,13 @@ nav {
     justify-content: space-between;
     /* 盒型陰影：左右 上下 模糊 顏色 */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* 定位：黏住 */
     position: sticky;
+    /* 上方：0 */
     top: 0;
     height: 100px;
     background-color: rgba(255, 255, 255, 0.5);
+    /* 深度：數字越大越上方 */
     z-index: 1;
 }
 
@@ -61,7 +64,9 @@ nav ol li a:hover {
     /* 背景尺寸：覆蓋 */
     background-size: cover;
     margin-top: -100px;
+    /* 變形：縮放(1) - 1 為 100% */
     transform: scale(1);
+    /* 轉換：秒數 */
     transition: 1s;
 }
 
@@ -69,6 +74,7 @@ nav ol li a:hover {
     transform: scale(1.15);
 }
 #banner-box{
+    /* 溢出：隱藏 (隱藏超出範圍的部分) */
     overflow: hidden;
 }
 
